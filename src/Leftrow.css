@@ -1,0 +1,20 @@
+.leftrow {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.leftrow:hover {
+  background-color: #e4e6eb;
+  border-radius: 10px;
+}
+
+.leftrow > h4 {
+  margin-left: 10px;
+}
+
+.leftrow > .MuiSvgIcon-root {
+  color: #ff1493;
+  font-size: xx-large;
+}
