@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import Header from './Header';
 import Leftbar from './Leftbar';
+import View from './View';
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
        <Header />
        <div className= "app-structure">
          <Leftbar />
+         <View />
        </div>
     </div>
   );
