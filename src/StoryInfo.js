@@ -5,7 +5,7 @@ import './StoryInfo.css';
 function StoryInfo({image, profile, title}) {
     return (
         <div style= {{ backgroundImage: `url(${image})` }} className= "story-info">
-            <Avatar src= {profile} />
+            <Avatar className= "avatar" src= {profile} />
             <h4> {title} </h4>
         </div>
     )
