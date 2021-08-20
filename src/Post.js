@@ -20,6 +20,10 @@ function Post() {
 
     const handleClick= (e) => {
         e.preventDefault();
+
+
+        setInput("");
+        setImage("");
     }
 
     return (
