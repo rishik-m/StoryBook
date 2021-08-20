@@ -6,6 +6,11 @@ function Story() {
     return (
         <div className= "story">
             <StoryInfo
+               image= "https://images.unsplash.com/photo-1584949091598-c31daaaa4aa9?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGRldmVsb3BlcnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"
+               profile= "https://images.unsplash.com/photo-1602992708529-c9fdb12905c9?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8ZGV2ZWxvcGVyfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"
+               title= "Alan Dev"
+            />
+            <StoryInfo
                image= "https://images.unsplash.com/photo-1549793959-284bccc3331b?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzR8fHNreXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"
                profile= "https://images.unsplash.com/uploads/14110635637836178f553/dcc2ccd9?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGdpcmx8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"
                title= "Anna Head"
@@ -16,7 +21,7 @@ function Story() {
                title= "Steve Wagh" 
             />
             <StoryInfo
-               image= "https://images.unsplash.com/photo-1579546929556-bf8352f5889c?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzl8fGxpZ2h0JTIwYmFja2dyb3VuZHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"
+               image= "https://images.unsplash.com/photo-1504567961542-e24d9439a724?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzV8fG5hdHVyZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"
                profile= "https://images.unsplash.com/flagged/photo-1585257505726-c9bc7954eeaa?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjN8fGRldmVsb3AlMjBndXl8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"
                title= "Stuart Broad" 
             />
