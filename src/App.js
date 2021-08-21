@@ -4,9 +4,10 @@ import Header from './Header';
 import Leftbar from './Leftbar';
 import View from './View';
 import Login from './Login';
+import { useStateValue } from './StateProvider';
 
 function App() {
-  const user= null;
+  const [{user}, dispatch] = useStateValue();
   return (
     <div className="app">
        {!user ? ( <Login /> ): 
