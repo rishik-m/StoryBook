@@ -11,8 +11,11 @@ import ListIcon from '@material-ui/icons/List';
 import MessageIcon from '@material-ui/icons/Message';
 import NotificationsNoneIcon from '@material-ui/icons/NotificationsNone';
 import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown';
+import { useStateValue } from './StateProvider';
 
 function Header() {
+    const [{user}, dispatch] = useStateValue();
+    
     return (
         <div className= "header">
             <div className= "header-left">
@@ -44,8 +47,8 @@ function Header() {
             </div>
             <div className= "header-right">
                 <div className= "header_right-options">
-                   <Avatar />
-                   <h4> Rishik </h4>
+                   <Avatar src= {user.photoURL} />
+                   <h4> {user.displayName} </h4>
                 </div>
                 <IconButton> <ListIcon /> </IconButton>
                 <IconButton> <MessageIcon /> </IconButton>

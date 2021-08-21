@@ -4,9 +4,13 @@ import './Post.css';
 import VideocamIcon from '@material-ui/icons/Videocam';
 import PhotoLibraryIcon from '@material-ui/icons/PhotoLibrary';
 import InsertEmoticonIcon from '@material-ui/icons/InsertEmoticon';
+import { useStateValue } from './StateProvider';
+import db from './firebase';
+import firebase from 'firebase';
 
 function Post() {
 
+    const [{user}, dispatch] = useStateValue();
     const [input, setInput] = useState("");
     const [image, setImage] = useState("");
 
@@ -21,6 +25,14 @@ function Post() {
     const handleClick= (e) => {
         e.preventDefault();
 
+        db.collection('posts').add({
+            text: input,
+            timestamp: firebase.firestore.FieldValue.serverTimestamp(),
+            profile: user.photoURL,
+            username: user.displayName,
+            image: image
+        })
+
 
         setInput("");
         setImage("");
@@ -29,9 +41,9 @@ function Post() {
     return (
         <div className= "post">
            <div className= "post-top">
-              <Avatar />
+              <Avatar src= {user.photoURL} />
               <form>
-                 <input onChange= {handleChange} value= {input} placeholder= "What's on your mind?" className= "top-input" />
+                 <input onChange= {handleChange} value= {input} placeholder= {`What's on your mind, ${user.displayName}?`} className= "top-input" />
                  <input value= {image} onChange= {handleChangeImg} placeholder= "Image URL" />
                  <button onClick= {handleClick} type= "submit"> SUBMIT </button>
               </form>
